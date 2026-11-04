@@ -1,0 +1,1414 @@
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:48:49.904Z
+Exit code 49
+---
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:48:52.054Z
+Exit code 127
+/usr/bin/bash: line 1: conda: command not found
+---
+/usr/bin/bash: line 1: conda: command not found
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:49:02.492Z
+Exit code 1
+Python 3.11.7
+---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'scipy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlib'
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:49:10.339Z
+Exit code 2
+ls: cannot access '/c/ProgramData/anaconda3': No such file or directory
+DLLs
+LICENSE_PYTHON.txt
+Lib
+ls: cannot access '/c/Python*': No such file or directory
+ls: cannot access '/c/Program Files/Python*': No such file or directory
+ls: cannot access '/c/msys64/mingw64/bin/python.exe': No such file or directory
+ls: cannot access '/c/msys64/clang64/bin/python.exe': No such file or directory
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:49:23.528Z
+Exit code 1
+=== rknn_opset19 ===
+numpy 1.26.4
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'scipy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlib'
+=== study ===
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import numpy; print('numpy', numpy.__version__)
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'numpy
+
+----- [c--Users-KasuganoSora-Desktop-gcc-phat/63883335] 2026-10-02T06:49:43.817Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import numpy; print('numpy', numpy.__version__)
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import scipy; print('scipy ok')
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scipy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import matplotlib; print('mpl ok')
+  
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T10:36:23.651Z
+<tool_use_error>Blocked: sleep 90 followed by: tail -3 "d:/vivado_project/FPGA/GCC-PHAT_2/logs/build/build_servo_20261101.log" echo "---" grep -a "SYNTH DONE\|IMPL DONE\|ERROR" "d:/vivado_project/FPGA/GCC-PHAT_2/logs/build/build_servo_20261101.log" tail -5. To wait for a condition, use Monitor with an until-loop (e.g. `until <check>; do sleep 2; done`). To wait for a command you started, use run_in_background: true. Do not chain shorter sleeps to work around this block.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T10:36:50.347Z
+Exit code 2
+---
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_positioni_9/\u_peak/dstate_reg[2] )
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:11:40.929Z
+Exit code 1
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:14:26.734Z
+Exit code 1
+cp: cannot stat 'GCC-PHAT.runs/impl_1/top_gcc_phat.bit': No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:16:30.850Z
+Exit code 1
+2
+26:# launch_runs synth_1 -jobs 8
+2371:# puts "SYNTH DONE: [get_property STATUS [get_runs synth_1]]"
+2372:SYNTH DONE: synth_design Complete!
+---OUT---
+# if {[get_property PROGRESS [get_runs synth_1]] != "100%"} {
+#     error "SYNTH FAILED: [get_property STATUS [get_runs synth_1]]"
+# }
+# puts "SYNTH DONE: [get_property STATUS [get_runs synth_1]]"
+SYNTH DONE: synth_design Complete!
+# open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to 
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:16:59.581Z
+Exit code 1
+########## tb_ifft_probe ##########
+  无自检   日志无 PASS/FAIL，需人工确认（波形打印型 TB）
+
+########## tb_wrap_test ##########
+---
+-rw-r--r-- 1 KasuganoSora 197609 717 2026-10-30_19:07:13 sim_all/run_tb_wrap_test.out
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:17:01.770Z
+Exit code 2
+# report_clock_utilization -file $rpt/clock_util.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_clock_utilization: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1521.242 ; gain = 656.445
+# close_design
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T12:55:40.329Z
+<tool_use_error>Blocked: sleep 120 followed by: cd "D:/vivado_project/FPGA/GCC-PHAT_2" grep -n "WNS =\|WHS =\|ERROR:\|Exiting Vivado" logs/build/build_fastrelock2_20261101.log tail -8 date. To wait for a condition, use Monitor with an until-loop (e.g. `until <check>; do sleep 2; done`). To wait for a command you started, use run_in_background: true. Do not chain shorter sleeps to work around this block.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:16:58.561Z
+Exit code 2
+/d/vivado/Vivado/2018.3/bin/vivado.bat
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:17:04.011Z
+Exit code 49
+00B2B9
+007C2F
+004F83
+002CBE
+0013E4
+0004F9
+000000
+000000
+000000
+000000
+000000
+000000
+000000
+000000
+000000
+000000
+...
+000000
+000000
+000000
+000000
+000000
+---
+2:// hanning_rom_24b.sv - 分包2子模块2.1：汉宁窗系数ROM（BRAM）
+7:// 系数文件：../../ip/hanning_256.mem（十六进制，一行一个）
+9:// 注：$readmemh 初始化 ROM 是 Xilinx UG901 明确支持的可综合写法，
+15:module hanning_rom_24b (
+23:    initial $readmemh("hanning_256.mem", rom);
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:17:07.721Z
+Exit code 49
+/usr/bin/bash: line 1: py: command not found
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:52:27.944Z
+File does not exist. Note: your current working directory is D:\vivado_project\FPGA\GCC-PHAT_2\sim_audio.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:54:01.395Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T15:54:56.115Z
+<tool_use_error>String to replace not found in file.
+String:     reg [3:0] state;
+    reg [9:0] mcnt;         // 频谱流计数 0..517W
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T16:15:01.734Z
+Exit code 1
+00_交付说明.md
+01_定点误差分析报告.md
+02_接口时序说明.md
+03_仿真验证记录.md
+04_板级调试指南.md
+05_工程重建指南.md
+06_升级8麦克风_48kHz指南.md
+07_特定频率无人机识别调参指南.md
+08_真实录音仿真与掩码配置对比.md
+report
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T16:16:26.856Z
+Exit code 2
+Mon Nov  2 00:16:26     2026
+---
+-rw-r--r-- 1 KasuganoSora 197609 26296 00:10:02 GCC-PHAT.xpr
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-01T16:19:30.224Z
+The user doesn't want to take this action right now. STOP what you are doing and wait for the user to tell you how to proceed.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:04:26.644Z
+Exit code 49
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:04:29.246Z
+Exit code 127
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python.exe
+/usr/bin/bash: line 1: py: command not found
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:05:55.020Z
+Exit code 1
+  File "<stdin>", line 15
+    p=arg.strip().replace('\','/')
+                                ^
+SyntaxError: unterminated string literal (detected at line 15)
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:39:32.256Z
+Exit code 1
+1 D:/vivado_project/FPGA/GCC-PHAT_2/logs/build/docbuild_20261104_0038.log
+/usr/bin/bash: line 1: vivado: command not found
+--- vivado locations ---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:42:56.613Z
+<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:46:27.272Z
+Exit code 2
+/usr/bin/bash: -c: line 31: unexpected EOF while looking for matching `''
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T16:53:09.898Z
+Exit code 1
+  WARNING: The script pypdfium2.exe is installed in 'C:\Users\KasuganoSora\.conda\envs\rknn_opset19\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'pypdfium2' has no attribute '__version__'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:17:56.598Z
+Exit code 1
+Traceback (most recent call last):
+  File "D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\export_pdf.py", line 3, in <module>
+    import win32com.client as win32
+ModuleNotFoundError: No module named 'win32com'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:18:06.886Z
+Exit code 127
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'win32com'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:20:48.016Z
+Exit code 1
+Traceback (most recent call last):
+  File "D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\build_doc_old.py", line 901, in <module>
+    doc.save(OUT)
+  File "C:\Users\KasuganoSora\AppData\Roaming\Python\Python310\site-packages\docx\document.py", line 204, in save
+    self._part.save(path_or_stream)
+  File "C:\Users\KasuganoSora\AppData\Roaming\Python\Python310\site-packages\docx\parts\document.py", line 114, in save
+    self.package.save(path_or_stream)
+  File "C:\Users\Ka
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:40:11.175Z
+Exit code 2
+-rw-r--r-- 1 KasuganoSora 197609 1820654 Nov  4 01:36 _preview.pdf
+drwxr-xr-x 1 KasuganoSora 197609       0 Nov  4 01:37 _preview_pages
+-rw-r--r-- 1 KasuganoSora 197609 2640324 Nov  4 01:36 _preview_src.docx
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:40:14.240Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'win32com'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-03T17:45:05.705Z
+Exit code 1
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-04T03:04:11.749Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'docx'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-04T03:29:20.654Z
+Exit code 1
+wrote D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\figs\fig06_resource.png
+wrote D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\figs\fig07_error_budget.png
+wrote D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\figs\fig08_ai_skill.png
+Traceback (most recent call last):
+  File "D:\vivado_project\FPGA\GCC-PHAT_2\doc_report_assets\build_doc_old.py", line 794, in <module>
+    doc.save(OUT)
+  File "C:\Users\KasuganoSora\AppData\Roaming\Python\Python310\site-packages\d
+
+----- [d--vivado-project-FPGA-GCC-PHAT-2/9b8c01a8] 2026-11-04T03:32:17.569Z
+Exit code 1
+����λ�� ��:1 �ַ�: 82
++ ... vices.Marshal]::GetActiveObject('Word.Application'); foreach( in .Doc ...
++                                                                  ~
+foreach ����ȱ�ٱ������ơ�
+����λ�� ��:1 �ַ�: 96
++ ... :GetActiveObject('Word.Application'); foreach( in .Documents){ Write- ...
++                                                                 ~
+����ʽ������а�������ı�ǡ�)����
+����λ�� ��:1 �ַ�: 121
++ ... pplication'); foreach( in .Documents){ Write-Output ('DOC='
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T11:38:23.820Z
+Path does not exist: d:\vivado_project\FPGA\GCC-PHAT\GCC-PHAT.xpr. Note: your current working directory is d:\vivado_project\FPGA\GCC-PHAT\GCC-PHAT\GCC-PHAT.srcs.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T11:38:36.290Z
+Exit code 2
+total 4
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct  2 17:45 .
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct  2 16:40 ..
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct  2 19:27 GCC-PHAT
+ls: cannot access '/d/vivado_project/FPGA/GCC-PHAT/GCC-PHAT.srcs/': No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T11:41:07.460Z
+Exit code 2
+synth_1
+ISEWrap.js
+ISEWrap.sh
+__synthesis_is_running__
+gen_run.xml
+htr.txt
+project.wdf
+rundef.js
+runme.bat
+runme.log
+runme.sh
+top_gcc_phat.tcl
+top_gcc_phat.vds
+vivado.jou
+vivado.pb
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T11:42:45.707Z
+Exit code 2
+DocNav
+LICENSE.TXT
+SDK
+Vivado
+Vivado license
+Xilinx_Vivado_SDK_2018.3_1207_2324
+xic
+2018.3
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T12:01:30.891Z
+Exit code 1
+0
+tb_clk_gen: 0
+tb_mic_serial_rx: 0
+tb_mic_frame_buffer: 0
+tb_mic_collect_top: 0
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T12:19:44.063Z
+Unable to verify if domain docs.bigmodel.cn is safe to fetch. This may be due to network restrictions or enterprise security policies blocking claude.ai.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T12:37:44.703Z
+The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T14:00:54.411Z
+Exit code 1
+/usr/bin/bash: line 1: printf: `"': invalid format character
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T14:00:59.047Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T14:14:31.157Z
+<tool_use_error>String to replace not found in file.
+String:     // 供 S_CFG_WAIT 判断的配置完成标志（wrapper 内 cfg_pending 的镜像：
+    // 这里用固定 8 拍等待，覆盖配置握手最坏情况）
+    reg [3:0] cfg_wait_cnt;
+    always @(posedge clk_50m or negedge rst_n) begin
+        if (!rst_n)
+            cfg_wait_cnt <= 0;
+        else if (state == S_CFG_WAIT)
+            cfg_wait_cnt <= cfg_wait_cnt + 1'b1;
+        else
+            cfg_wait_cnt <= 0;
+    end
+    wire cfg_pending_sync = (cfg_wait_cnt < 4'd8) ? 1'b1 : 1'b0;
+    // 说明：配置握手单
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T15:04:37.251Z
+Exit code 1
+ERROR: [VRFC 10-3380] identifier 'load_en' is used before its declaration [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/pair_scheduler.sv:102]
+ERROR: [VRFC 10-2865] module 'pair_scheduler' ignored due to previous errors [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/pair_scheduler.sv:22]
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T15:05:01.451Z
+Exit code 1
+ERROR: [VRFC 10-3380] identifier 'load_en' is used before its declaration [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/pair_scheduler.sv:102]
+ERROR: [VRFC 10-3380] identifier 'S_FREQ_LOOP' is used before its declaration [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/pair_scheduler.sv:116]
+ERROR: [VRFC 10-2865] module 'pair_scheduler' ignored due to previous errors [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/pai
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:15:06.642Z
+Exit code 2
+bisect
+csim
+gen_atan.log
+gen_atan.tcl
+gen_atan_41812.backup.log
+gen_atan_43652.backup.log
+gen_ip.log
+gen_ip.tcl
+gen_ip2.log
+iso
+minimal
+place.log
+place2.log
+probe_ip.log
+probe_ip.tcl
+run_place.tcl
+run_simcheck.tcl
+run_synth.tcl
+run_synth3.tcl
+run_synth4.tcl
+sim2
+synth10.log
+synth11.log
+synth12.log
+synth3.log
+synth4.log
+synth5.log
+synth6.log
+synth7.log
+synth8.log
+synth9.log
+synth_verify.log
+synth_verify2.log
+vivado.jou
+vivado.log
+vivado_45560.backup.jou
+vivado_45896.backup.jou
+vivado_
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:15:11.163Z
+Exit code 2
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:15:41.339Z
+Exit code 1
+XVLOG ERRORS=19
+ERROR: [VRFC 10-1412] syntax error near : [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/project_global_param.vh:19]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/project_global_param.vh:19]
+INFO: [VRFC 10-311] analyzing module cordic_phat_norm_24b
+ERROR: [VRFC 10-1412] syntax error near ' [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:15:53.170Z
+Exit code 1
+XELAB ERRORS=1
+ERROR: [XSIM 43-3225] Cannot find design unit work.tb_cordic_only in library work located at xsim.dir/work.
+rk.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:16:04.936Z
+Exit code 1
+XVLOG ERRORS=19
+ERROR: [VRFC 10-2989] 'project_global_pkg' is not declared [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/project_global_param.vh:19]
+INFO: [VRFC 10-311] analyzing module cordic_phat_norm_24b
+ERROR: [VRFC 10-2989] 'DATA_WIDTH' is not declared [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/cordic_phat_norm_24b.sv:27]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHA
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:29:54.314Z
+<tool_use_error>String to replace not found in file.
+String:     wire signed [34:0] den_ext = {{8{den[26]}}, den};
+    wire signed [34:0] rem_next = ({rem_acc[33:0], 1'b0}) - den_ext;
+    wire den_bad = (den <= 27'sd0);            // 峰尖退化 → delta=0
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:33:12.621Z
+<tool_use_error>String to replace not found in file.
+String:                 D_IDLE: begin
+                    if (div_start) begin
+                        if (den_bad) begin
+                            dstate    <= D_DONE;
+                            delta_q10 <= 16'sd0;
+                        end else begin
+                            dstate   <= D_RUN;
+                            d_cnt    <= 0;
+                            rem_acc  <= {{9{num_raw[24]}}, num_raw, 9'b0};  // ×512
+              
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:33:26.469Z
+<tool_use_error>String to replace not found in file.
+String:                         delta_q10 <= num_raw[24] ?
+                                      $signed({{8{1'b0}}, (quotient > 16'd512) ? 16'd512 : quotient[7:0]})
+                                     :- $signed({{8'b0, (quotient > 16'd512) ? 16'd512 : quotient[7:0]}});</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:47:21.499Z
+<tool_use_error>String to replace not found in file.
+String:     reg [47:0] div_num_reg;
+    reg [19:0] div_den_reg;
+
+    div_serial #(.DIV_CYC(24), .NUM_W(48)) u_div (</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:47:57.944Z
+Exit code 2
+INFO: [VRFC 10-2458] undeclared symbol t23, assumed default net type wire [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:64]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:66]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:67]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:48:23.125Z
+Exit code 2
+INFO: [VRFC 10-2458] undeclared symbol t23, assumed default net type wire [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:64]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:66]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_verify/iso4/tb_tdoa_solver.sv:67]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Users/KasuganoSora/AppData/Local
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T17:59:08.302Z
+Exit code 1
+1356:DSPs: 240 (col length:80)
+1944:Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---
+sed: -e expression #1, char 1: unknown command: `,'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T18:15:08.287Z
+<tool_use_error>String to replace not found in file.
+String:     // 帧缓存读接口（分包1 → 分包2）
+    wire mic_rd_en;
+    wire [CHAN_IDX_WIDTH-1:0] mic_rd_ch;
+    wire [FFT_IDX_WIDTH-1:0]  mic_rd_addr;
+    wire [DATA_WIDTH-1:0]     mic_rd_data;
+
+    // 4. 声源方位输出与阵列配置（4路十字阵列）
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T18:15:28.866Z
+Exit code 1
+=== 源文件含乱码(U+FFFD)的行数:
+7 top_gcc_phat.sv
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T18:29:12.367Z
+<tool_use_error>String to replace not found in file.
+String: | 顶层端口 | 方向 | 建议引脚 | Bank | 说明 |
+|---|---|---|---|---|
+| 顶层端口 | 方向 | 建议引脚 | Bank | 说明 |
+|---|---|---|---|---|
+| `clk_50m` | 输入 | J19 | 15 | 50 MHz 有源晶振（MRCC 时钟专用脚） |
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-02T18:37:24.634Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T00:23:48.873Z
+<tool_use_error>String to replace not found in file.
+String: wire [COORD_WIDTH-1:0] target_x, target_y;   // 声源坐标（cm，补码有符号数）
+wire [TDOA_WIDTH-1:0]  tdoa_vals [0:MAX_PAIR_NUM-1];
+wire position_valid;
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T00:26:07.452Z
+Exit code 2
+---
+--- drives ---
+--- D root ---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T01:15:06.963Z
+Exit code 1
+ERROR: [VRFC 10-3380] identifier 'cks' is used before its declaration [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/uart_tx_module.sv:164]
+ERROR: [VRFC 10-2865] module 'uart_tx_module' ignored due to previous errors [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/uart_tx_module.sv:26]
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T01:15:20.453Z
+Exit code 1
+ERROR: [VRFC 10-3380] identifier 'tx_busy' is used before its declaration [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/uart_tx_module.sv:263]
+ERROR: [VRFC 10-2865] module 'uart_tx_module' ignored due to previous errors [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/uart_tx_module.sv:26]
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T01:28:22.941Z
+Exit code 2
+==> xvlog.log <==
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/project_global_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/uart_tx_module.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx_module
+
+==> xelab.log <==
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Re
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T01:28:55.524Z
+Exit code 2
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T01:29:29.939Z
+deepseek-v4-pro[1m] is temporarily unavailable, so auto mode cannot determine the safety of Bash right now. Wait a moment and then try this action again. If it keeps failing, continue with other tasks that don't require this action and come back to it later. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-03T05:13:48.349Z
+Exit code 49
+45006 C:\Users\KASUGA~1\AppData\Local\Temp\claude\d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs\efb92714-69a3-4a82-a869-ead490bf24bf\tasks\wxu187r43.output
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-04T10:11:49.984Z
+Exit code 1
+dump 字节数 1092
+  COM3   BthModem2
+  COM4   BthModem3
+  COM5   BthModem5
+  COM6   BthModem0
+  COM8   BthModem1
+  COM9   BthModem4
+
+请用 --port COMx 指定（USB-TTL 一般显示为 USB-SERIAL CH340 等）
+--- CSV 前 4 行 ---
+head: cannot open '_t_log.csv' for reading: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-04T16:24:10.804Z
+Exit code 1
+31:    input  wire [MAX_FFT_POINT-1:0] freq_valid_mask,
+140:    wire learn_mask_zero = (freq_valid_mask == {MAX_FFT_POINT{1'b0}});
+270:            wr_msk <= {wr_msk[PIPE_DLY-2:0], freq_valid_mask[freq_cnt]};
+=== doc06 头部风格 ===
+head: cannot open '../../../../doc/06_'$'\345\215\207\347\272\247''8'$'\351\272\246\345\205\213\351\243\216''_48kHz'$'\346\214\207\345\215\227''.md' for reading: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-04T16:25:38.806Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 12, in <module>
+UnicodeEncodeError: 'gbk' codec can't encode character '\u21d4' in position 11: illegal multibyte sequence
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E= 59 -> pass=False
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E= 60 -> pass=False
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E= 61 -> pass=True
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E= 70 -> pass=True
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E=100 -> pass=True
+ѧϰ��ÿ֡E=100 (mean=100)  ��֡E=150 -> pass=True
+ѧϰ��ÿ֡E=100 (mean=1
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T05:44:30.822Z
+Exit code 1
+ffmpeg   （未安装）
+ffprobe  （未安装）
+sox      （未安装）
+=== python 音频库 ===
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2713' in position 2: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2717' in position 2: illegal multi
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T06:07:09.887Z
+Exit code 1
+exit=1
+tail: cannot open 'diag.log' for reading: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T07:04:28.821Z
+File does not exist. Note: your current working directory is d:\vivado_project\FPGA\GCC-PHAT\GCC-PHAT\GCC-PHAT.srcs.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T11:24:22.451Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T11:33:14.567Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T11:40:01.535Z
+Exit code 1
+Y18   : 0
+B21   : 0
+E18   : 0
+F18   : 0
+D19   : 0
+E19   : 0
+F19   : 0
+F20   : 0
+M22   : 0
+N22   : 0
+L21   : 0
+K21   : 0
+M15   : 0
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T11:40:28.729Z
+Exit code 2
+Writing bitstream D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.runs/top_gcc_phat.bit...
+--- exit ---
+BITSTREAM DONE
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 19:37:42 2026...
+--- 产物 ---
+-rw-r--r-- 1 KasuganoSora 197609 2339595 Oct  5 19:37 GCC-PHAT.runs/top_gcc_phat.bit
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T11:44:04.092Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT-GCC-PHAT-srcs/efb92714] 2026-10-05T12:23:04.414Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T11:24:32.351Z
+Exit code 1
+=== 5m/4m frames=206 target_bit=22 ===
+ fr  t(s)  rawpeak  lead  g  outpeak  sat%%  Xmax   cross01>gate  cross23>gate  maskpass
+Traceback (most recent call last):
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/analysis_far/agc_eval.py", line 86, in <module>
+    main()
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/analysis_far/agc_eval.py", line 81, in main
+    print(f"{f:4d} {f*0.0256:6.2f} {rp:8d} {lead:5d} {g:2d} {rp<<g:8d} "
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T11:27:46.119Z
+<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T11:27:48.187Z
+<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T11:52:17.699Z
+Exit code 2
+Expected a switch but found 2
+XSim simulation executable
+Usage: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xsim.exe [options]
+(Switches with double dash '--' can also be used with a single dash '-')
+    --R                  : Run simulation till end i.e. do 'run all;quit'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T11:52:22.444Z
+Exit code 2
+Expected a switch but found 2
+XSim simulation executable
+Usage: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xsim.exe [options]
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T12:23:57.340Z
+Exit code 143
+Command timed out after 2m 0s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T12:57:56.539Z
+Exit code 1
+        .overflow_error (overflow_error)
+    );
+
+    // 共享 AGC：写侧统计整帧峰值，读侧对该帧施加 2^g。
+    // 组合增益不改变帧缓存 1 拍读延迟，preprocess 调度器无需改动。
+    wire [3:0] agc_gain_dbg;
+
+    agc_shared_24b #(
+        .ENABLE     (AGC_EN),
+        .TARGET_BIT (AGC_TARGET_BIT),
+        .GMAX       (AGC_GMAX)
+    ) u_agc (
+        .clk_50m     (clk_50m),
+        .rst_n       (rst_n),
+        .sample_valid(ch_valid_hp[0]),
+        .samp        (ch_data_hp),
+        .frame_done  (frame_valid_int),
+        .din     
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T12:58:04.379Z
+Exit code 2
+70:INFO: [Synth 8-6157] synthesizing module 'agc_shared_24b' [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/agc_shared_24b.sv:37]
+74:INFO: [Synth 8-6155] done synthesizing module 'agc_shared_24b' (5#1) [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/agc_shared_24b.sv:37]
+1186:Module agc_shared_24b 
+2563:|7     |    u_agc                         |agc_shared_24b             |   127|
+2590:Synthesis finished with 0 errors, 0 critical warnings 
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T13:07:03.842Z
+Exit code 1
+exit=0
+grep: util_hier.log: No such file or directory
+
+[exited with code 2]
+--- log ---
+ls: cannot access 'util_hier.log': No such file or directory
+-rw-r--r-- 1 KasuganoSora 197609 7295 Oct 24 21:06 util_hier_before.rpt
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T13:20:47.614Z
+Exit code 2
+=== Slices/BRAM/DSP ===
+| Slice LUTs                 | 26068 |     0 |     63400 | 41.12 |
+| Slice Registers            | 27815 |     0 |    126800 | 21.94 |
+| Slice                                      |  9387 |     0 |     15850 | 59.22 |
+| Slice Registers                            | 27815 |     0 |    126800 | 21.94 |
+| Block RAM Tile    | 15.5 |     0 |       135 | 11.48 |
+| DSPs           |  172 |     0 |       240 | 71.67 |
+=== timing ===
+Timing Summary Report
+  Timing Early L
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T13:21:03.386Z
+Exit code 2
+29:    localparam integer NFRAME   = 27;              // 3 学习 + 24 测量（NFRM 覆盖测量帧数）
+38:    localparam integer BIN_LO = 26;
+39:    localparam integer BIN_HI = 76;
+128:    wire        inband = (fft_idx >= BIN_LO) && (fft_idx <= BIN_HI);
+163:    // 单独跑 +CFGSEL=2 时两者都从复位开始，故以前只在单配置模式下通过。
+238:    // ---------------- PHAT 缓存探针（+PBUF=1，只在配置A、测量帧上打印）----------------
+246:            $write("    [PBUF] 帧%0d TB掩码 ", pre_frame_cnt);
+249:            $write("\n    [PBUF] 帧%0d DUT掩码 ", pre_frame_cnt
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-24T13:45:43.635Z
+Exit code 1
+15m  frames 19..174  1.0-1.5k 52.5%  1.5-2.0k 3.3%  2.0-3.0k 26.7%  1.0-3.0k 82.4%
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/analysis_far/dsp.py", line 19, in read_channels
+    with open(p, "r") as f:
+         ^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/KasuganoSora/Desktop/audio/5,4/audio/audio_ch0.txt'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-25T14:46:27.824Z
+The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T17:35:18.155Z
+<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T17:40:54.685Z
+File does not exist. Note: your current working directory is D:\vivado_project\FPGA\GCC-PHAT\GCC-PHAT\GCC-PHAT.srcs\sim_1\new.
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:06:18.306Z
+Exit code 1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sim_1/new/tb_audio_drone.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_audio_drone
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sim_1/new/tb_seg8_hc595.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg8_hc595
+
+########## tb_audio_drone ##########
+=== elab ===
+Start
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:06:51.906Z
+Exit code 2
+=== synth status ===
+=== impl ===
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:07:54.052Z
+Exit code 1
+ls: cannot access 'opt_tb_audio_drone.f': No such file or directory
+ls: cannot access 'tb_audio_drone.log': No such file or directory
+-rw-r--r-- 1 KasuganoSora 197609 2382 Oct 27 02:06 run_tb_audio_drone.out
+=== opt content ===
+=== elab mtime ===
+-rw-r--r-- 1 KasuganoSora 197609 407 Oct 27 02:07 elab_tb_audio_drone.log
+=== procs ===
+
+   Id ProcessName       CPU StartTime         
+   -- -----------       --- ---------         
+21224 xelab       27.109375 2026/10/27 2:07:25
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:08:29.232Z
+Exit code 1
+
+   Id ProcessName      CPU StartTime         
+   -- -----------      --- ---------         
+21224 xelab       61.21875 2026/10/27 2:07:25
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:08:33.264Z
+Exit code 1
+�ɹ�: ����ֹ PID Ϊ 21224 �Ľ��̡�
+
+   Id ProcessName
+   -- -----------
+43176 xelab
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:12:03.375Z
+Exit code 1
+total 48
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct 27 02:05 .
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct 27 02:07 ..
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct  5 15:19 Vivado-10536-KasuganoSora
+drwxr-xr-x 1 KasuganoSora 197609 0 Oct 27 02:05 Vivado-40360-KasuganoSora
+=== stale vivado ===
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:12:28.996Z
+Exit code 1
+Tue Oct 27 02:12:28     2026
+=== synth stage ===
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 42812 
+=== 8-6104 in new synth ===
+24
+=== build tail ===
+
+*** Running vivado
+    with args -log top_gcc_phat.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_gcc_phat.tcl
+
+=== audio ===
+INFO: [VRFC 10-311] analyzing module tb_seg8_hc595
+
+########## tb_audio_drone ##########
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:13:23.726Z
+Exit code 2
+Tue Oct 27 02:13:23     2026
+=== audio ===
+=== synth ===
+INFO: [Synth 8-3886] merging instance 'u_positioni_9/u_peak/delta_q10_reg[14]' (FDCE) to 'u_positioni_9/u_peak/delta_q10_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_positioni_9/\u_peak/dstate_reg[2] )
+=== impl dir ===
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:20:53.404Z
+Exit code 2
+Tue Oct 27 02:20:53     2026
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2481.375 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file top_gcc_phat_methodology_drc_routed.rpt -pb top_gcc_phat_methodology_drc_routed.pb -rpx top_gcc_phat_methodology_drc_routed.rpx
+Command: report_methodology -file top_gcc_phat_methodology_drc_routed.rpt -pb top_gcc_phat_methodology_drc_routed.pb -rpx top_gcc_phat_methodology_drc_routed.rpx
+INFO: [T
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:23:48.520Z
+Exit code 2
+Tue Oct 27 02:23:48     2026
+  [测量] 帧11 掩码位数=93/129 有效=0 τ01=0 τ23=0 φ=0 θ=0
+  [测量] 帧12 掩码位数=91/129 有效=0 τ01=0 τ23=0 φ=0 θ=0
+=== fft_chain ===
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -sv --timescale 1ns/1ps --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_chain xil_defaultlib.tb_fft_chain 
+Multi-threading is 
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-26T18:24:09.246Z
+Exit code 2
+Tue Oct 27 02:24:09     2026
+  [测量] 帧10 掩码位数=94/129 有效=0 τ01=0 τ23=0 φ=0 θ=0
+  [测量] 帧11 掩码位数=93/129 有效=0 τ01=0 τ23=0 φ=0 θ=0
+  [测量] 帧12 掩码位数=91/129 有效=0 τ01=0 τ23=0 φ=0 θ=0
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-30T09:18:53.320Z
+Exit code 2
+| Slice LUTs                 | 37464 |     0 |     63400 | 59.09 |
+|   LUT as Logic             | 31839 |     0 |     63400 | 50.22 |
+|   LUT as Memory            |  5625 |     0 |     19000 | 29.61 |
+| LUT as Logic                               | 31839 |     0 |     63400 | 50.22 |
+| LUT as Memory                              |  5625 |     0 |     19000 | 29.61 |
+===
+BIN==BIT[123:] OK
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-31T12:04:11.392Z
+Exit code 1
+ERROR: [Synth 8-439] module 'gimbal_link_tx' not found [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/top_gcc_phat.sv:173]
+ERROR: [Synth 8-6156] failed synthesizing module 'top_gcc_phat' [D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/GCC-PHAT.srcs/sources_1/new/top_gcc_phat.sv:15]
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+SYNTH FAILED: synth_design ERROR
+---timing---
+    WNS(ns)      TNS(ns)  TNS Fail
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-31T13:44:59.706Z
+Exit code 1
+total 64
+drwxr-xr-x 1 KasuganoSora 197609    0 Oct 31 21:44 .
+drwxr-xr-x 1 KasuganoSora 197609    0 Oct 31 20:50 ..
+-rw-r--r-- 1 KasuganoSora 197609 3537 Oct 31 20:17 README.md
+-rw-r--r-- 1 KasuganoSora 197609 8796 Oct 31 21:44 main.c
+---
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-31T15:32:27.502Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/3bec8b23] 2026-10-31T15:35:22.436Z
+<tool_use_error>String to replace not found in file.
+String: | `SERVO_TICK_MS` | 20 | 舵机输出更新周期（ms），一般不用改 |
+| `SERVO_SLEW_STEP` | 4 | 每 tick 最大角度变化（0.1°）：4 = 20°/s；增大加速、减小减速 |
+| `SERVO_PULSE_MIN_US` / `MAX_US` | 1000 / 2000 | 脉宽行程；若舵机实际行程不足 180°，按 100 µs 步进调整 |
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T11:56:20.353Z
+<tool_use_error>String to replace not found in file.
+String:         } else $display("用例 1(学习期) tau=(1957,1957): 正确判为无效");
+(note: Edit also tried swapping \uXXXX escapes and their characters; neither form matched, so the mismatch is likely elsewhere in old_string. Re-read the file and copy the exact surrounding text.)</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T12:27:30.968Z
+Exit code 2
+=== python ===
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python
+=== python3 ===
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+=== py ===
+=== where python ===
+C:\Users\KasuganoSora\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\msys64\ucrt64\bin\python.exe
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T15:09:59.740Z
+Exit code 2
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T15:52:43.231Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 16, in <module>
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/gcc_model.py", line 141, in process
+    bins = [frame_bins(f, win) for f in frames]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/gcc_model.py", line 141, in <listcomp>
+    bins = [frame_bins(f, win) for f in frames]
+            ^^^^^^^^^^^^^^^^^^
+  File "D:/vivado_project/FPGA/GCC-PHA
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T15:54:48.561Z
+Exit code 1
+raw slice 21600
+resampled 27000
+rms beam 88103.9 resid ['90024.1', '80906.8', '92113.9', '70998.8']
+Traceback (most recent call last):
+  File "<stdin>", line 17, in <module>
+  File "<stdin>", line 17, in <listcomp>
+  File "<stdin>", line 17, in <listcomp>
+NameError: name 'c' is not defined
+
+real	0m0.848s
+user	0m0.015s
+sys	0m0.063s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T15:55:07.727Z
+Exit code 1
+��ȡ 4 · 8 kHz ¼�� ...
+  75008 ����/· = 9.376 s
+�ز��� 8��10 kHz ...
+  93760 ����/· = 9.376 s
+����ʱ�� d10 = ['+0.000', '-4.185', '+2.111', '-6.179'] ����
+����/���� RMS��beam=68436.0��resid=['101887.2', '100258.1', '91992.8', '82020.1']
+������� 4.000~6.500 s��25000 ������
+   5 m ��= -88.939�� ��= 46.154�� �� t=['+0.000', '-0.149', '-4.167', '+3.906']
+  10 m ��= -47.881�� ��= 31.289�� �� t=['+0.000', '-6.683', '-7.041', '+0.350']
+  20 m ��= 134.783�� ��= 46.681�� �� t=['+0.000',
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T16:03:22.503Z
+Exit code 1
+
+### 40 m
+Traceback (most recent call last):
+  File "<stdin>", line 50, in <module>
+  File "<stdin>", line 27, in test
+  File "<stdin>", line 22, in synth
+TypeError: can't multiply sequence by non-int of type 'float'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T16:09:07.914Z
+Exit code 2
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python
+/c/msys64/ucrt64/bin/python
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+/c/msys64/ucrt64/bin/python3
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+/usr/bin/bash: line 1: py: command not found
+py_exit=0
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T16:49:58.697Z
+Exit code 1
+Traceback (most recent call last):
+  File "D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/check_mem_model.py", line 9, in <module>
+    import gcc_model as gm
+ModuleNotFoundError: No module named 'gcc_model'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T18:09:50.662Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ModuleNotFoundError: No module named 'numpy'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T18:18:10.889Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xaa in position 111: illegal multibyte sequence
+grep: tb_probe.sv: No such file or directory
+tail: cannot open 'tb_probe.sv' for reading: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T18:24:14.113Z
+Exit code 1
+����λ�� ��:1 �ַ�: 102
++ ... ; =(Get-Process xsimk).CPU; Write-Output ('cpu_a='++' cpu_b='++' delt ...
++                                                         ~~~~~~~~~
+����ʽ������а�������ı�ǡ�' cpu_b='����
+����λ�� ��:1 �ַ�: 102
++ ... econds 15; =(Get-Process xsimk).CPU; Write-Output ('cpu_a='++' cpu_b= ...
++                                                                  ~
+����ʽ��ȱ���ҡ�)����
+����λ�� ��:1 �ַ�: 125
++ ... Process xsimk).CPU; Write-Output ('cpu_a='++' cpu_b='+
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-22T18:47:35.809Z
+Exit code 1
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T02:16:03.673Z
+Exit code 1
+sed: -e expression #1, char 1: unknown command: `,'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T02:17:24.644Z
+Exit code 2
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/check_impl.tcl
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/run_bit.tcl
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/run_impl.tcl
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/run_sim_all.sh
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T02:19:28.475Z
+Exit code 2
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/doc/00_交付说明.md:122:  资源比早期快照（LUT 19868 / FF 23678）高，主要来自频点噪声掩码 `u_mask`：
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/doc/03_仿真验证记录.md:191:| 建立裕量只剩 +0.098 ns | 布线后 WNS 从 +0.584 跌到 +0.098 ns（关键路径 19.77 ns、16 级 CARRY4） | UART 中的 `\|A\|/10`、`\|A\|%10` 32 位除法链 | 十进制位改用**逐位减法**提取，A/E 小数位直接取整数位拆完后的余数；WNS 恢复到 **+6.06 ns**（本轮最终布线 **+6.55 ns**） |
+D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/doc/05_工程重建指南.md:141:| `DPIP-1/DPOP-1/DPOP-2/DPOR-1` | 10 / 9 / 17 / 1
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T02:51:32.332Z
+Exit code 49
+ls: cannot access 'D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/moving_10m/': No such file or directory
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T02:51:35.815Z
+Exit code 49
+/usr/bin/bash: line 1: py: command not found
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T03:24:30.231Z
+Exit code 1
+  10 m ��= -47.881�� ��= 31.289�� �� t=['+0.000', '-6.683', '-7.041', '+0.350']
+  20 m ��= 134.783�� ��= 46.681�� �� t=['+0.000', '+5.636', '+5.657', '-0.022']
+  30 m ��= -67.685�� ��= 26.843�� �� t=['+0.000', '-3.951', '-6.799', '+2.827']
+  40 m ��=  32.172�� ��= 38.079�� �� t=['+0.000', '-7.770', '-1.437', '-6.325']
+  50 m ��= 131.438�� ��= 38.851�� �� t=['+0.000', '+6.011', '+6.409', '-0.400']
+ѧϰ�� 2.534~2.611 s��3 ֡���������� 4.685~4.736 s��2 ֡/λ�ã�
+  each ���꣺ѧϰ֡ ��0.779��
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:20:19.147Z
+Exit code 143
+Command timed out after 2m 0s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:26:23.374Z
+Exit code 143
+Command timed out after 2m 0s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:28:28.807Z
+Exit code 143
+Command timed out after 2m 0s
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:28:34.010Z
+Exit code 49
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:28:41.112Z
+Exit code 49
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T04:28:47.425Z
+Exit code 2
+== py ==
+== python3 ==
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+== python3.11 ==
+/c/msys64/ucrt64/bin/python3.11
+Python 3.11.7
+== python3.12 ==
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T05:20:19.454Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T05:26:52.660Z
+Exit code 1
+/usr/bin/bash: line 1: cd: hpf_unit: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T05:40:11.826Z
+Exit code 1
+/usr/bin/bash: line 1: cd: sim_audio: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T05:40:11.826Z
+Exit code 1
+/usr/bin/bash: line 1: cd: sim_audio: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T05:40:11.826Z
+Exit code 1
+/usr/bin/bash: line 1: cd: sim_audio: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:05:58.357Z
+Exit code 1
+���룺8000 Hz��4 ͨ����ÿͨ�� 32768 ������4.096 s��
+  ch0: ��ֵ 436932 (-25.7 dBFS)��RMS 103983 (-38.1 dBFS)
+  ch1: ��ֵ 323375 (-28.3 dBFS)��RMS 82079 (-40.2 dBFS)
+  ch2: ��ֵ 502180 (-24.5 dBFS)��RMS 114450 (-37.3 dBFS)
+  ch3: ��ֵ 321857 (-28.3 dBFS)��RMS 72649 (-41.2 dBFS)
+�ز����� 10 kHz��ÿͨ�� 40990 ������4.099 s��
+  ch0@10k: ��ֵ 80368��RMS 20511
+  ch1@10k: ��ֵ 68647��RMS 15989
+  ch2@10k: ��ֵ 102513��RMS 22519
+  ch3@10k: ��ֵ 68789��RMS 14176
+Traceback (most recent call last):
+ 
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:07:50.455Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'scipy'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:07:58.459Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ModuleNotFoundError: No module named 'audio1_preview'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:41:11.894Z
+Exit code 127
+/usr/bin/bash: line 1: C:/modeltech64_10.6e/win64/vcom.exe: No such file or directory
+/usr/bin/bash: line 1: C:/modeltech64_10.6e/win64/vlib.exe: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:42:07.290Z
+Exit code 2
+total 0
+drwxr-xr-x 1 KasuganoSora 197609 0 Sep 23 01:02 .
+drwxr-xr-x 1 KasuganoSora 197609 0 Sep 22 21:29 ..
+====
+====OTHER====
+/d/modelsim
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:43:02.298Z
+Exit code 1
+mv: cannot move 'D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/modelsim_run' to '/d/vivado_project/modelsim_gcc_phat/run': Device or resource busy
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T09:43:08.668Z
+Exit code 1
+mv: cannot move 'D:/vivado_project/FPGA/GCC-PHAT/GCC-PHAT/sim_audio/modelsim_run' to '/d/vivado_project/modelsim_gcc_phat/run': Device or resource busy
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T11:04:37.488Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T11:04:46.494Z
+Exit code 1
+ls: cannot access 'hanning_256.mem': No such file or directory
+head: cannot open 'hanning_256.mem' for reading: No such file or directory
+wc: hanning_256.mem: No such file or directory
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T11:06:14.086Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'gcc_model'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T11:41:54.511Z
+Permission for this command was denied by a built-in Claude Code safety check, not by the user. The check stops removals that can delete far more than intended: a system, home or workspace directory, or a target it cannot resolve, such as a shell variable that, if unset or empty, turns this into `rm -rf /` or `rm -rf /*`. Only a person may approve such a removal, and no person did (the permission prompt timed out, or this session cannot prompt). The command was NOT run; do not claim it succeeded
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T14:22:22.861Z
+Exit code 1
+file bytes        : 29816
+CRLF records      : 329
+parsed frames     : 327
+unparsed lines    : 1  (���ļ����нض�/����)
+checksum failures : 0
+frame seq         : 7217 .. 7543, �������� 0
+
+==== ��Ч�� ====
+V=1              : 327 (100.0%)
+V=0              : 0 (0.0%)
+
+==== �Ƕȣ��� V=1��327 ֡��====
+A(��λ)  n=327 mean=-34.79 std=115.91 min=-178.1 max=+178.6
+E(����)  n=327 mean=+45.74 std=20.01 min=+0.0 max=+82.8
+Ψһ (A,E) ���   : 267 / 327 (81.7%)
+Top-8 (A,E) ���:
+    (  -99.0,  
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T14:45:30.593Z
+Exit code 1
+Traceback (most recent call last):
+  File "<stdin>", line 26, in <module>
+  File "<stdin>", line 14, in score2
+  File "<stdin>", line 10, in contrib
+IndexError: list index out of range
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T14:50:44.158Z
+Exit code 2
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T14:50:47.596Z
+Exit code 2
+/c/ProgramData/Xilinx
+/d/vivado/Xilinx_Vivado_SDK_2018.3_1207_2324
+---
+/c/ProgramData/Xilinx
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T14:51:24.733Z
+Exit code 1
+---
+== /d/vivado
+/d/vivado/Vivado/2018.3/bin/vivado.bat
+== /d/tools
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T15:41:41.496Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+  File "<string>", line 6, in <genexpr>
+  File "<string>", line 6, in <genexpr>
+ValueError: invalid literal for int() with base 10: 'T02'
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T15:42:40.487Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+IndexError: list index out of range
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T15:44:22.827Z
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+  File "C:/msys64/ucrt64/lib/python3.11/statistics.py", line 565, in median
+    raise StatisticsError("no median for empty data")
+statistics.StatisticsError: no median for empty data
+old log frames 0
+
+----- [d--vivado-project-FPGA-GCC-PHAT-GCC-PHAT/563f95e1] 2026-10-23T15:46:15.814Z
+Exit code 1
+T01  n=1091 : -11:35 -10:63 -9:52 -8:61 -7:39 -6:50 -5:52 -4:25 -3:35 -2:46 -1:60 +0:200 +1:29 +2:37 +3:23 +4:44 +5:40 +6:38 +7:53 +8:33 +9:33 +10:33 +11:10
+T02  n=1091 : -11:19 -10:66 -9:27 -8:67 -7:81 -6:58 -5:58 -4:28 -3:33 -2:22 -1:32 +0:215 +1:50 +2:33 +3:44 +4:28 +5:35 +6:38 +7:35 +8:33 +9:30 +10:37 +11:22
+T03  n=1091 : -11:22 -10:31 -9:47 -8:22 -7:74 -6:103 -5:47 -4:70 -3:23 -2:20 -1:22 +0:245 +1:35 +2:29 +3:19 +4:40 +5:53 +6:44 +7:45 +8:27 +9:31 +10:33 +11:9
+T12  n=1091 : 
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T03:37:54.042Z
+Exit code 2
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T03:52:40.935Z
+Exit code 49
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T04:42:48.177Z
+<tool_use_error>Blocked: sleep 45 followed by: tail -20 "C:\Users\KASUGA~1\AppData\Local\Temp\claude\d--vivado-project-FPGA-GCC-PHAT\00d141ea-8d8b-49b7-b753-b8741a4da933\tasks\b1stdjqcd.output" echo "---" ps -W grep -iE "vivado.exe|srcscanner" head date. To wait for a condition, use Monitor with an until-loop (e.g. `until <check>; do sleep 2; done`). To wait for a command you started, use run_in_background: true. Do not chain shorter sleeps to work around this block.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T04:46:04.205Z
+Exit code 1
+-rw-r--r-- 1 KasuganoSora 197609 2907692 Nov  1 11:47 GCC-PHAT.runs/top_gcc_phat.bin
+-rw-r--r-- 1 KasuganoSora 197609 2907815 Nov  1 11:47 GCC-PHAT.runs/top_gcc_phat.bit
+====
+1e805962869dd6221d89752d56460212b3f9f5e2a8f364bfed7e4a0fdbf4300b *GCC-PHAT.runs/top_gcc_phat.bit
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:07:05.196Z
+Exit code 1
+---add_gimbal log---
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+---rebuild log tail---
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:08:16.839Z
+Exit code 2
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+=== rebuild ===
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:09:02.619Z
+Exit code 2
+56:---- 场景 D：01/23 连续无效后快速角度恢复 ----
+57:  D1 快速角度 φ=-963 θ=364 | 参考 φ=-963 θ=364
+58:  D2 快速角度 φ=-963 θ=364 | 参考 φ=-963 θ=364
+66:PASS
+=== gimbal ===
+run -all
+PASS case 1: 1500/1500 us（期望 1500/1500）
+PASS case 2: 1500/1250 us（期望 1500/1250）
+PASS case 3: 1167/1833 us（期望 1167/1833）
+=== build ===
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:23:37.470Z
+Exit code 127
+which: no jq in (/c/Users/KasuganoSora/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/KasuganoSora/bin:/c/Users/KasuganoSora/.vscode/extensions/cl.eide-3.27.2/res/tools/win32/unify_builder:/c/Users/KasuganoSora/.eide/bin/builder/utils:/c/Users/KasuganoSora/.eide/bin/scripts:/c/Users/KasuganoSora/.vscode/extensions/cl.eide-3.27.2/res/tools/win32/7z:/c/Users/KasuganoSora/.vscode/extensions/cl.eide-3.27.2/res/tools/win32/utils:/c/Users/KasuganoSora/.eide/
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:31:24.119Z
+Exit code 1
+dumped 8 edits to C:/Users/KASUGA~1/AppData/Local/Temp/gccphat_analysis/rollback_edits.json
+node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/tmp/gccphat_analysis/rollback_edits.json'
+Require stack:
+- D:\vivado_project\FPGA\GCC-PHAT\[eval]
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:34:07.703Z
+Exit code 49
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T05:34:14.423Z
+Exit code 127
+/c/msys64/ucrt64/bin/python3.11
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python3
+/c/Users/KasuganoSora/AppData/Local/Microsoft/WindowsApps/python
+Python 3.11.7
+/usr/bin/bash: line 1: py: command not found
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T07:12:55.330Z
+Exit code 1
+pairs giving exactly (999,900): 1
+Traceback (most recent call last):
+  File "C:/Users/KasuganoSora/AppData/Local/Temp/gccphat_analysis/scan_angle.py", line 47, in <module>
+    print("  tau=(%d,%d) ca=%d cb=%d rho=%d cosg=%d phi=%d th=%d" % ((k,) + targets[k]))
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+TypeError: %d format: a real number is required, not tuple
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:38:27.317Z
+Exit code 2
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1740.992 ; gain = 207.570
+# report_utilization    -file $rpt/util_impl.rpt
+# report_timing_summary -file $rpt/timing_summary.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1904.637 ; gain
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:49:51.711Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:52:01.121Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:52:35.447Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:52:36.206Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T09:53:28.904Z
+Exit code 2
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/vivado_project/FPGA/GCC-PHAT_2/GCC-PHAT.srcs/sources_1/new/complex_mult_24b.sv:30]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/vivado_project/FPGA/GCC-PHAT_2/GCC-PHAT.srcs/sources_1/new/complex_mult_24b.sv:30]
+INFO: [Synth 8-5844] D
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T10:01:30.399Z
+Exit code 49
+
+----- [d--vivado-project-FPGA-GCC-PHAT/00d141ea] 2026-11-01T10:03:06.665Z
+<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>
