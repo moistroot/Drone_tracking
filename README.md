@@ -207,6 +207,8 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 │   └── gccp_20261101_120320.DAT  # 实测串口抓包
 ├── data/                         # 真实录音：audio_4ch.wav + mic0~mic3.wav
 ├── report/                       # 设计报告 + 大模型协作记录
+│   ├── skill_distill             # 智能体协作记录
+│   └── Design_Report.pdf         # 技术文档
 ├── build/synth_1/                # 综合中间产物（可选）
 ├── skill/                        # 四路并行 FFT 预处理链的可复用技能包（可选）
 └── REDAME.md                     # 本文件
