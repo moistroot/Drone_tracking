@@ -1,0 +1,58 @@
+# clean deploy / install check
+# date: 2026-11-04
+# host: MINGW64_NT-10.0-26200
+# note: verification logs are evidence only and are not copied by install.sh
+
+$ cp -r skill/gcc-phat-4ch /c/Users/KASUGA~1/AppData/Local/Temp/skill-clean.TK6uaX/pkg
+$ sh $TMP/pkg/scripts/install.sh /c/Users/KASUGA~1/AppData/Local/Temp/skill-clean.TK6uaX
+installed copy: OK
+destination: /c/Users/KASUGA~1/AppData/Local/Temp/skill-clean.TK6uaX/.claude/skills/gcc-phat-4ch
+
+$ sh $TMP/pkg/scripts/check.sh
+PACKAGE CHECK PASSED
+payload sha256:
+49482cdb4c162a20322395b3dd983771df30c080a064b378310cce5c286ec01b *SKILL.md
+b86283fc9d9a8533c9e65cc6e92221ae895ee129f08915a2eaa6a6e8a53221e6 *references/01_algorithm.md
+7451bd51d9d9f7c47802ea585b6618192b411f9b8cfdd0e6d4b1001af4be52c4 *references/02_integration.md
+cfb86ea78e3db96363c11ebd8240f431caf3b774d92cab5175bbe2a360d776c5 *references/03_verification.md
+ff4dce8d06efd0cf2068d08e9e9efec0c35975660bb9f823e7b67a4823c0aaac *references/04_pitfalls.md
+e9107fc89e7b2592a769e90552c0433f134dd516001a2c7533e778673cd48066 *scripts/install.sh
+e2e7b4d2050f37f966acbfa9b838abda5375680a723abaf3a9bba0dad6937872 *scripts/check.sh
+f66a5dad8d49720fc72db81a3b95ac547ea49dff46781fc4e90cd7e744947ef8 *scripts/run_tb_fft.sh
+a332bb2380d6da3f7f8bf2bb3f93c47565a2491118563f511ffa7496daf0e5cc *assets/tb_fft_chain.sv
+
+$ diff -r SKILL.md references scripts assets (source vs installed)
+no differences
+
+$ sh <installed>/scripts/check.sh
+verification logs: not installed (ok)
+PACKAGE CHECK PASSED
+payload sha256:
+49482cdb4c162a20322395b3dd983771df30c080a064b378310cce5c286ec01b *SKILL.md
+b86283fc9d9a8533c9e65cc6e92221ae895ee129f08915a2eaa6a6e8a53221e6 *references/01_algorithm.md
+7451bd51d9d9f7c47802ea585b6618192b411f9b8cfdd0e6d4b1001af4be52c4 *references/02_integration.md
+cfb86ea78e3db96363c11ebd8240f431caf3b774d92cab5175bbe2a360d776c5 *references/03_verification.md
+ff4dce8d06efd0cf2068d08e9e9efec0c35975660bb9f823e7b67a4823c0aaac *references/04_pitfalls.md
+e9107fc89e7b2592a769e90552c0433f134dd516001a2c7533e778673cd48066 *scripts/install.sh
+e2e7b4d2050f37f966acbfa9b838abda5375680a723abaf3a9bba0dad6937872 *scripts/check.sh
+f66a5dad8d49720fc72db81a3b95ac547ea49dff46781fc4e90cd7e744947ef8 *scripts/run_tb_fft.sh
+a332bb2380d6da3f7f8bf2bb3f93c47565a2491118563f511ffa7496daf0e5cc *assets/tb_fft_chain.sv
+
+== local project install ==
+$ sh skill/gcc-phat-4ch/scripts/install.sh .
+installed copy: OK
+destination: D:/vivado_project/FPGA/GCC-PHAT_2/.claude/skills/gcc-phat-4ch
+
+$ sh .claude/skills/gcc-phat-4ch/scripts/check.sh
+verification logs: not installed (ok)
+PACKAGE CHECK PASSED
+payload sha256:
+49482cdb4c162a20322395b3dd983771df30c080a064b378310cce5c286ec01b *SKILL.md
+b86283fc9d9a8533c9e65cc6e92221ae895ee129f08915a2eaa6a6e8a53221e6 *references/01_algorithm.md
+7451bd51d9d9f7c47802ea585b6618192b411f9b8cfdd0e6d4b1001af4be52c4 *references/02_integration.md
+cfb86ea78e3db96363c11ebd8240f431caf3b774d92cab5175bbe2a360d776c5 *references/03_verification.md
+ff4dce8d06efd0cf2068d08e9e9efec0c35975660bb9f823e7b67a4823c0aaac *references/04_pitfalls.md
+e9107fc89e7b2592a769e90552c0433f134dd516001a2c7533e778673cd48066 *scripts/install.sh
+e2e7b4d2050f37f966acbfa9b838abda5375680a723abaf3a9bba0dad6937872 *scripts/check.sh
+f66a5dad8d49720fc72db81a3b95ac547ea49dff46781fc4e90cd7e744947ef8 *scripts/run_tb_fft.sh
+a332bb2380d6da3f7f8bf2bb3f93c47565a2491118563f511ffa7496daf0e5cc *assets/tb_fft_chain.sv
