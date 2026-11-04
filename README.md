@@ -206,13 +206,9 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 │   ├── uart_monitor.py           # 串口原始帧记录脚本（TXT / --hex / --timestamp）
 │   └── gccp_20261101_120320.DAT  # 实测串口抓包
 ├── data/                         # 真实录音：audio_4ch.wav + mic0~mic3.wav
-├── GCC-PHAT/                     # Vivado 2018.3 工程
-│   ├── GCC-PHAT.xpr
-│   ├── GCC-PHAT.srcs/constrs_1/new/pin.xdc, time.xdc
-│   └── GCC-PHAT.srcs/sources_1/ip/xfft_256, xfft_0
+├── report/                       # 设计报告 + 大模型协作记录
 ├── build/synth_1/                # 综合中间产物（可选）
 ├── skill/                        # 四路并行 FFT 预处理链的可复用技能包（可选）
-├── 技术报告_基于FPGA的低成本声学追踪系统改.docx / .pdf   # 详细技术报告
 └── REDAME.md                     # 本文件
 ```
 
