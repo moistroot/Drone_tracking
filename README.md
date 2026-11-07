@@ -185,7 +185,7 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 
 ```text
 .
-├── src/                          # 26 个设计 .sv（与 Vivado 工程源码一致）
+├── src/                          # 26 个设计 .sv
 │   ├── project_global_pkg.sv     # 唯一参数源（采样率/点数/频段/AGC/串口分频）
 │   ├── project_global_param.vh   # 参数包引用头
 │   ├── mic_collect_top.sv        # 采集分包顶层
@@ -199,9 +199,9 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 │   ├── ifft_peak_detect.sv / fft_24b_wrapper.sv
 │   ├── sqrt_serial.sv / div_serial.sv / tdoa_solver.sv / uart_tx_module.sv
 │   └── top_gcc_phat.sv / seg8_hc595.sv / servo_pan_tilt.sv
-├── sim/                          # 19 个定向仿真 TB（未加入 Vivado 工程树）
+├── sim/                          # 19 个定向仿真 TB
 ├── board/                        # 比特流与串口工具
-│   ├── top_gcc_phat.bit          # 综合实现后比特流（2,910,179 字节）
+│   ├── top_gcc_phat.bit          # 综合实现后比特流
 │   ├── top_gcc_phat.bin
 │   ├── uart_monitor.py           # 串口原始帧记录脚本（TXT / --hex / --timestamp）
 │   └── gccp_20261101_120320.DAT  # 实测串口抓包
@@ -209,8 +209,8 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 ├── report/                       # 设计报告 + 大模型协作记录
 │   ├── skill_distill             # 智能体协作记录
 │   └── Design_Report.pdf         # 技术文档
-├── build/synth_1/                # 综合中间产物（可选）
-├── skill/                        # 四路并行 FFT 预处理链的可复用技能包（可选）
+├── build/synth_1/                # 综合中间产物
+├── skill/                        # 四路并行 FFT 预处理链的可复用技能包
 └── REDAME.md                     # 本文件
 ```
 
@@ -222,7 +222,7 @@ $GCCP,0042,T01:+005,T02:+000,T03:+005,T12:-005,T13:+005,T23:+005,A:+045.0,E:+051
 2. **综合 / 烧录**：用 Vivado 2018.3 打开 `GCC-PHAT/GCC-PHAT.xpr` 自行综合实现，或直接将 `board/top_gcc_phat.bit` 烧录至 FPGA。
 3. **连接串口**：将开发板 UART TX（M15）接 USB-TTL，串口参数 115200 8N1。
 4. **观察结果**：8 位数码管显示方位/俯仰角，双轴云台自动指向声源方向。
-5. **记录数据**（可选）：`pip install pyserial` 后运行 `python board/uart_monitor.py -p COM3 -b 115200 -o gccp_log.txt`，可加 `--hex` 或 `--timestamp` 记录原始帧。
+5. **记录数据**：`pip install pyserial` 后运行 `python board/uart_monitor.py -p COM3 -b 115200 -o gccp_log.txt`，可加 `--hex` 或 `--timestamp` 记录原始帧。
 6. **上电行为**：首帧即有粗角度（单帧 → 4 帧后 5 帧中值），约 3.28 s 后进入 128 帧投票稳定输出；纯风声等无效场景输出 `V:0`。
 
 ## 参数化与移植
